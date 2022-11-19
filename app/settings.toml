@@ -1,0 +1,15 @@
+[default]
+ENV = "production"
+EXTENSIONS = [
+    "flask_bootstrap:Bootstrap",
+    "skel.blueprints.webui:init_app",
+    "skel.blueprints.api:init_app",
+]
+
+[development]
+ENV = "development"
+
+[testing]
+ENV = "testing"
+DEBUG = false
+TESTING = true

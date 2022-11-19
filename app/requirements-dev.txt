@@ -1,0 +1,9 @@
+black
+docstr-coverage
+flask-debugtoolbar
+ipdb
+isort
+pytest
+pytest-cov
+pytest-flask
+pytest-repeat

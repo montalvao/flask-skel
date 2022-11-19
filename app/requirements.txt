@@ -1,0 +1,4 @@
+dynaconf
+flask
+flask-bootstrap
+python-dotenv
