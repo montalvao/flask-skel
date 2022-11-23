@@ -16,4 +16,9 @@ def create_app(**config) -> Flask:
     app = create_minimal_app(**config)
     load_extensions(app.config)
 
+    # Favicon: this works only when the app is in the root path
+    @app.route("/favicon.ico")
+    def favicon():
+        return app.send_static_file("favicon.ico")
+
     return app

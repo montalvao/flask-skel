@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
+{%- block head -%}
+{{ super() }}
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+{%- endblock -%}
+
 {%- block title -%} Page Title {%- endblock -%}
 
 {%- block content -%}
