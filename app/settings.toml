@@ -2,12 +2,18 @@
 ENV = "production"
 EXTENSIONS = [
     "flask_bootstrap:Bootstrap",
+    "skel.extensions.auth:init_app",
     "skel.blueprints.webui:init_app",
     "skel.blueprints.api:init_app",
 ]
 
 [development]
+SECRET_KEY = "test"
 ENV = "development"
+SIMPLELOGIN_LOGIN_URL = "/admin/login/"
+SIMPLELOGIN_LOGOUT_URL = "/logout/"
+SIMPLELOGIN_USERNAME = "admin"
+SIMPLELOGIN_PASSWORD = "admin"
 
 [testing]
 ENV = "testing"

@@ -1,6 +1,6 @@
 from flask import Blueprint, Flask
 
-from .views import index
+from .views import admin, index
 
 BP_NAME = "webui"
 
@@ -15,6 +15,7 @@ bp = Blueprint(
 )
 
 bp.add_url_rule("/", view_func=index)
+bp.add_url_rule("/admin/", view_func=admin)
 
 
 def init_app(app: Flask) -> None:

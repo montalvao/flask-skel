@@ -1,4 +1,6 @@
 dynaconf
 flask
 flask-bootstrap
+flask-simplelogin
+flask-wtf
 python-dotenv
