@@ -19,6 +19,7 @@ def create_app(**config) -> Flask:
     # Favicon: this works only when the app is in the root path
     @app.route("/favicon.ico")
     def favicon():
+        """Send favicon (older browsers and direct url requests)."""
         return app.send_static_file("favicon.ico")
 
     return app
