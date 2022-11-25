@@ -1,5 +1,5 @@
 from flask import Flask
-from flask_simplelogin import SimpleLogin
+from flask_simplelogin import SimpleLogin, is_logged_in
 
 _sl = SimpleLogin()
 

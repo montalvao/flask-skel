@@ -1,5 +1,7 @@
 [default]
 ENV = "production"
+SIMPLELOGIN_LOGIN_URL = "/admin/login/"
+SIMPLELOGIN_LOGOUT_URL = "/logout/"
 EXTENSIONS = [
     "flask_bootstrap:Bootstrap",
     "skel.extensions.auth:init_app",
@@ -10,8 +12,6 @@ EXTENSIONS = [
 [development]
 SECRET_KEY = "test"
 ENV = "development"
-SIMPLELOGIN_LOGIN_URL = "/admin/login/"
-SIMPLELOGIN_LOGOUT_URL = "/logout/"
 SIMPLELOGIN_USERNAME = "admin"
 SIMPLELOGIN_PASSWORD = "admin"
 
@@ -19,3 +19,6 @@ SIMPLELOGIN_PASSWORD = "admin"
 ENV = "testing"
 DEBUG = false
 TESTING = true
+SECRET_KEY = "test"
+SIMPLELOGIN_USERNAME = "test_admin"
+SIMPLELOGIN_PASSWORD = "test_password_admin"
