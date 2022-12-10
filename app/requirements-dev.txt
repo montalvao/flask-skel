@@ -3,6 +3,7 @@ docstr-coverage
 flask-debugtoolbar
 ipdb
 isort
+mypy
 pytest
 pytest-cov
 pytest-flask

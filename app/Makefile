@@ -20,7 +20,16 @@ run:
 	FLASK_DEBUG=true flask --app skel.app run
 
 
-test:
+static-check:
+	mypy \
+	--ignore-missing-imports \
+	--disallow-untyped-defs \
+	--disallow-untyped-calls \
+	--disallow-incomplete-defs \
+	skel tests
+
+
+test: static-check
 	FLASK_DEBUG=false pytest --verbose tests
 	isort --check .
 	black --check .
