@@ -7,6 +7,7 @@ EXTENSIONS = [
     "skel.extensions.auth:init_app",
     "skel.blueprints.webui:init_app",
     "skel.blueprints.api:init_app",
+    "skel.blueprints.seo:init_app",
 ]
 
 [development]
