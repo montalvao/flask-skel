@@ -1,6 +1,7 @@
 from flask import Flask
 
 from .extensions.config import init_app, load_extensions
+from .extensions.flask_sitemap import sitemap
 
 
 def create_minimal_app(**config) -> Flask:
@@ -21,5 +22,7 @@ def create_app(**config) -> Flask:
     def favicon():
         """Send favicon (older browsers and direct url requests)."""
         return app.send_static_file("favicon.ico")
+
+    sitemap.register_urls_from(app)
 
     return app

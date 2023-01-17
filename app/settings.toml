@@ -5,9 +5,9 @@ SIMPLELOGIN_LOGOUT_URL = "/logout/"
 EXTENSIONS = [
     "flask_bootstrap:Bootstrap",
     "skel.extensions.auth:init_app",
+    "skel.extensions.flask_sitemap:init_app",
     "skel.blueprints.webui:init_app",
     "skel.blueprints.api:init_app",
-    "skel.blueprints.seo:init_app",
 ]
 
 [development]

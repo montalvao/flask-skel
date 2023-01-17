@@ -2,9 +2,11 @@ black
 docstr-coverage
 flask-debugtoolbar
 ipdb
-isort
 mypy
+pre-commit
+pre-commit-hooks
 pytest
 pytest-cov
 pytest-flask
 pytest-repeat
+reorder-python-imports
